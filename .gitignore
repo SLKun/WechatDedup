@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 虚拟环境
+.venv/
+
+# 测试临时文件
+.test_files/
+
+# mypy
+.mypy_cache/
+
+# 本地编辑器配置
+.zcode/
+
+# 运行时数据
+.wechat-dedup.db
+.wechat-dedup.db-journal
+.wechat-dedup.db-wal
+.wechat-dedup.db-shm
+
+# 开发文档
+.scratch/
+docs/
+AGENTS.md
+CONTEXT.md

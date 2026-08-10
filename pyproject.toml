@@ -1,0 +1,20 @@
+[project]
+name = "wechat-dedup"
+version = "0.1.0"
+description = "微信附件去重工具（NTFS 硬链接）"
+requires-python = ">=3.10"
+dependencies = [
+    "textual==8.2.8",
+    "psutil>=5.9",
+    "blake3>=0.3",
+]
+
+[project.scripts]
+wechat-dedup = "wechat_dedup.app:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["wechat_dedup*"]
